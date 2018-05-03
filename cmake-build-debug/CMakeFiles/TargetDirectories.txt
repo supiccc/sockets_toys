@@ -1,0 +1,5 @@
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/host_byte_order.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/ntop6_toy.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/ntop_toy.dir

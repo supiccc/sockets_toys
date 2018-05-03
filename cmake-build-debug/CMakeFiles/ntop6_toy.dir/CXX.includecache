@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suoiccc/development/C++/sockets_toy/inect_fun/ntop6_toy.cpp
+iostream
+-
+iomanip
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
