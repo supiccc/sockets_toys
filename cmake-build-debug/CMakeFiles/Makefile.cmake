@@ -49,7 +49,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/tcp_echo_cli.dir/DependInfo.cmake"
   "CMakeFiles/host_byte_order.dir/DependInfo.cmake"
-  "CMakeFiles/ntop6_toy.dir/DependInfo.cmake"
   "CMakeFiles/ntop_toy.dir/DependInfo.cmake"
+  "CMakeFiles/tcp_echo_serv.dir/DependInfo.cmake"
+  "CMakeFiles/ntop6_toy.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
   )

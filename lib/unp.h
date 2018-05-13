@@ -301,7 +301,7 @@ int		 sock_get_port(const SA *, socklen_t);
 void	 sock_set_addr(SA *, socklen_t, const void *);
 void	 sock_set_port(SA *, socklen_t, int);
 void	 sock_set_wild(SA *, socklen_t);
-char	*sock_ntop(const SA *, socklen_t);
+char *sock_ntop();
 char	*sock_ntop_host(const SA *, socklen_t);
 int		 sockfd_to_family(int);
 void	 str_echo(int);

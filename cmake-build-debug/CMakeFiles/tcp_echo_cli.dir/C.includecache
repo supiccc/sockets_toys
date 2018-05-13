@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suoiccc/development/C++/sockets_toy/tcp_echo/clilent.c
+unp.h
+/Users/suoiccc/development/C++/sockets_toy/tcp_echo/unp.h
+

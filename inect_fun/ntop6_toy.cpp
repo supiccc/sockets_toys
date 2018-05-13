@@ -8,7 +8,7 @@
 
 // 测试将128位二进制转换为ipv4或ipv6地址
 int main() {
-    // 初始化一个ipv6地址结构
+    // 初始化一个ipv6地址结构，小端存储，大端读取，按字节读取
     struct in6_addr * addr = new struct in6_addr;
     addr->__u6_addr.__u6_addr32[0] = 0x10111010;
     addr->__u6_addr.__u6_addr32[1] = 0x0101FF11;

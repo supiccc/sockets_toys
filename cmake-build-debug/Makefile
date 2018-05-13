@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tcp_echo_cli
+
+# Build rule for target.
+tcp_echo_cli: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_cli
+.PHONY : tcp_echo_cli
+
+# fast build rule for target.
+tcp_echo_cli/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/build
+.PHONY : tcp_echo_cli/fast
+
+#=============================================================================
 # Target rules for targets named host_byte_order
 
 # Build rule for target.
@@ -122,6 +135,32 @@ host_byte_order: cmake_check_build_system
 host_byte_order/fast:
 	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/build
 .PHONY : host_byte_order/fast
+
+#=============================================================================
+# Target rules for targets named ntop_toy
+
+# Build rule for target.
+ntop_toy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ntop_toy
+.PHONY : ntop_toy
+
+# fast build rule for target.
+ntop_toy/fast:
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/build
+.PHONY : ntop_toy/fast
+
+#=============================================================================
+# Target rules for targets named tcp_echo_serv
+
+# Build rule for target.
+tcp_echo_serv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_serv
+.PHONY : tcp_echo_serv
+
+# fast build rule for target.
+tcp_echo_serv/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/build
+.PHONY : tcp_echo_serv/fast
 
 #=============================================================================
 # Target rules for targets named ntop6_toy
@@ -137,17 +176,17 @@ ntop6_toy/fast:
 .PHONY : ntop6_toy/fast
 
 #=============================================================================
-# Target rules for targets named ntop_toy
+# Target rules for targets named main
 
 # Build rule for target.
-ntop_toy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ntop_toy
-.PHONY : ntop_toy
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-ntop_toy/fast:
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/build
-.PHONY : ntop_toy/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 host_byte_order/host_byte_order.o: host_byte_order/host_byte_order.cpp.o
 
@@ -230,6 +269,87 @@ inect_fun/ntop_toy.cpp.s:
 	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.s
 .PHONY : inect_fun/ntop_toy.cpp.s
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+tcp_echo/clilent.o: tcp_echo/clilent.c.o
+
+.PHONY : tcp_echo/clilent.o
+
+# target to build an object file
+tcp_echo/clilent.c.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o
+.PHONY : tcp_echo/clilent.c.o
+
+tcp_echo/clilent.i: tcp_echo/clilent.c.i
+
+.PHONY : tcp_echo/clilent.i
+
+# target to preprocess a source file
+tcp_echo/clilent.c.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.i
+.PHONY : tcp_echo/clilent.c.i
+
+tcp_echo/clilent.s: tcp_echo/clilent.c.s
+
+.PHONY : tcp_echo/clilent.s
+
+# target to generate assembly for a file
+tcp_echo/clilent.c.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.s
+.PHONY : tcp_echo/clilent.c.s
+
+tcp_echo/server.o: tcp_echo/server.c.o
+
+.PHONY : tcp_echo/server.o
+
+# target to build an object file
+tcp_echo/server.c.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.o
+.PHONY : tcp_echo/server.c.o
+
+tcp_echo/server.i: tcp_echo/server.c.i
+
+.PHONY : tcp_echo/server.i
+
+# target to preprocess a source file
+tcp_echo/server.c.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.i
+.PHONY : tcp_echo/server.c.i
+
+tcp_echo/server.s: tcp_echo/server.c.s
+
+.PHONY : tcp_echo/server.s
+
+# target to generate assembly for a file
+tcp_echo/server.c.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.s
+.PHONY : tcp_echo/server.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,9 +358,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tcp_echo_cli"
 	@echo "... host_byte_order"
-	@echo "... ntop6_toy"
 	@echo "... ntop_toy"
+	@echo "... tcp_echo_serv"
+	@echo "... ntop6_toy"
+	@echo "... main"
 	@echo "... host_byte_order/host_byte_order.o"
 	@echo "... host_byte_order/host_byte_order.i"
 	@echo "... host_byte_order/host_byte_order.s"
@@ -250,6 +373,15 @@ help:
 	@echo "... inect_fun/ntop_toy.o"
 	@echo "... inect_fun/ntop_toy.i"
 	@echo "... inect_fun/ntop_toy.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... tcp_echo/clilent.o"
+	@echo "... tcp_echo/clilent.i"
+	@echo "... tcp_echo/clilent.s"
+	@echo "... tcp_echo/server.o"
+	@echo "... tcp_echo/server.i"
+	@echo "... tcp_echo/server.s"
 .PHONY : help
 
 
