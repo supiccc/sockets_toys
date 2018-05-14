@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /Users/suoiccc/development/C++/sockets_toy
 CMAKE_BINARY_DIR = /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/tcp_echo_serv_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/tcp_echo_serv_cpp.dir/all:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/depend
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target tcp_echo_serv_cpp"
+.PHONY : CMakeFiles/tcp_echo_serv_cpp.dir/all
+
+# Include target in all.
+all: CMakeFiles/tcp_echo_serv_cpp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tcp_echo_serv_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tcp_echo_serv_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/tcp_echo_serv_cpp.dir/rule
+
+# Convenience name for target.
+tcp_echo_serv_cpp: CMakeFiles/tcp_echo_serv_cpp.dir/rule
+
+.PHONY : tcp_echo_serv_cpp
+
+# clean rule for target.
+CMakeFiles/tcp_echo_serv_cpp.dir/clean:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/clean
+.PHONY : CMakeFiles/tcp_echo_serv_cpp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/tcp_echo_serv_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tcp_echo_cli.dir
 
 # All Build rule for target.

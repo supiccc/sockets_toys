@@ -1,15 +1,15 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/server.c" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/server.cpp" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

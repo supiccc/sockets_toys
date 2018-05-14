@@ -57,38 +57,38 @@ include CMakeFiles/host_byte_order.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/host_byte_order.dir/flags.make
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o: CMakeFiles/host_byte_order.dir/flags.make
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o: ../host_byte_order/host_byte_order.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o -c /Users/suoiccc/development/C++/sockets_toy/host_byte_order/host_byte_order.cpp
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o: CMakeFiles/host_byte_order.dir/flags.make
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o: ../src/host_byte_order/host_byte_order.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o -c /Users/suoiccc/development/C++/sockets_toy/src/host_byte_order/host_byte_order.cpp
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/host_byte_order/host_byte_order.cpp > CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.i
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/src/host_byte_order/host_byte_order.cpp > CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.i
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/host_byte_order/host_byte_order.cpp -o CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.s
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/src/host_byte_order/host_byte_order.cpp -o CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.s
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.requires:
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.requires:
 
-.PHONY : CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.requires
+.PHONY : CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.requires
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.provides: CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.requires
-	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.provides.build
-.PHONY : CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.provides
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.provides: CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.requires
+	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.provides.build
+.PHONY : CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.provides
 
-CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.provides.build: CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o
+CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.provides.build: CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o
 
 
 # Object files for target host_byte_order
 host_byte_order_OBJECTS = \
-"CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o"
+"CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o"
 
 # External object files for target host_byte_order
 host_byte_order_EXTERNAL_OBJECTS =
 
-host_byte_order: CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o
+host_byte_order: CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o
 host_byte_order: CMakeFiles/host_byte_order.dir/build.make
 host_byte_order: CMakeFiles/host_byte_order.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable host_byte_order"
@@ -99,7 +99,7 @@ CMakeFiles/host_byte_order.dir/build: host_byte_order
 
 .PHONY : CMakeFiles/host_byte_order.dir/build
 
-CMakeFiles/host_byte_order.dir/requires: CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o.requires
+CMakeFiles/host_byte_order.dir/requires: CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o.requires
 
 .PHONY : CMakeFiles/host_byte_order.dir/requires
 

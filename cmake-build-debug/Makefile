@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tcp_echo_serv_cpp
+
+# Build rule for target.
+tcp_echo_serv_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_serv_cpp
+.PHONY : tcp_echo_serv_cpp
+
+# fast build rule for target.
+tcp_echo_serv_cpp/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/build
+.PHONY : tcp_echo_serv_cpp/fast
+
+#=============================================================================
 # Target rules for targets named tcp_echo_cli
 
 # Build rule for target.
@@ -188,87 +201,6 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-host_byte_order/host_byte_order.o: host_byte_order/host_byte_order.cpp.o
-
-.PHONY : host_byte_order/host_byte_order.o
-
-# target to build an object file
-host_byte_order/host_byte_order.cpp.o:
-	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o
-.PHONY : host_byte_order/host_byte_order.cpp.o
-
-host_byte_order/host_byte_order.i: host_byte_order/host_byte_order.cpp.i
-
-.PHONY : host_byte_order/host_byte_order.i
-
-# target to preprocess a source file
-host_byte_order/host_byte_order.cpp.i:
-	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.i
-.PHONY : host_byte_order/host_byte_order.cpp.i
-
-host_byte_order/host_byte_order.s: host_byte_order/host_byte_order.cpp.s
-
-.PHONY : host_byte_order/host_byte_order.s
-
-# target to generate assembly for a file
-host_byte_order/host_byte_order.cpp.s:
-	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.s
-.PHONY : host_byte_order/host_byte_order.cpp.s
-
-inect_fun/ntop6_toy.o: inect_fun/ntop6_toy.cpp.o
-
-.PHONY : inect_fun/ntop6_toy.o
-
-# target to build an object file
-inect_fun/ntop6_toy.cpp.o:
-	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.o
-.PHONY : inect_fun/ntop6_toy.cpp.o
-
-inect_fun/ntop6_toy.i: inect_fun/ntop6_toy.cpp.i
-
-.PHONY : inect_fun/ntop6_toy.i
-
-# target to preprocess a source file
-inect_fun/ntop6_toy.cpp.i:
-	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.i
-.PHONY : inect_fun/ntop6_toy.cpp.i
-
-inect_fun/ntop6_toy.s: inect_fun/ntop6_toy.cpp.s
-
-.PHONY : inect_fun/ntop6_toy.s
-
-# target to generate assembly for a file
-inect_fun/ntop6_toy.cpp.s:
-	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.s
-.PHONY : inect_fun/ntop6_toy.cpp.s
-
-inect_fun/ntop_toy.o: inect_fun/ntop_toy.cpp.o
-
-.PHONY : inect_fun/ntop_toy.o
-
-# target to build an object file
-inect_fun/ntop_toy.cpp.o:
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o
-.PHONY : inect_fun/ntop_toy.cpp.o
-
-inect_fun/ntop_toy.i: inect_fun/ntop_toy.cpp.i
-
-.PHONY : inect_fun/ntop_toy.i
-
-# target to preprocess a source file
-inect_fun/ntop_toy.cpp.i:
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.i
-.PHONY : inect_fun/ntop_toy.cpp.i
-
-inect_fun/ntop_toy.s: inect_fun/ntop_toy.cpp.s
-
-.PHONY : inect_fun/ntop_toy.s
-
-# target to generate assembly for a file
-inect_fun/ntop_toy.cpp.s:
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.s
-.PHONY : inect_fun/ntop_toy.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -296,59 +228,167 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tcp_echo/clilent.o: tcp_echo/clilent.c.o
+src/host_byte_order/host_byte_order.o: src/host_byte_order/host_byte_order.cpp.o
 
-.PHONY : tcp_echo/clilent.o
-
-# target to build an object file
-tcp_echo/clilent.c.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o
-.PHONY : tcp_echo/clilent.c.o
-
-tcp_echo/clilent.i: tcp_echo/clilent.c.i
-
-.PHONY : tcp_echo/clilent.i
-
-# target to preprocess a source file
-tcp_echo/clilent.c.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.i
-.PHONY : tcp_echo/clilent.c.i
-
-tcp_echo/clilent.s: tcp_echo/clilent.c.s
-
-.PHONY : tcp_echo/clilent.s
-
-# target to generate assembly for a file
-tcp_echo/clilent.c.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.s
-.PHONY : tcp_echo/clilent.c.s
-
-tcp_echo/server.o: tcp_echo/server.c.o
-
-.PHONY : tcp_echo/server.o
+.PHONY : src/host_byte_order/host_byte_order.o
 
 # target to build an object file
-tcp_echo/server.c.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.o
-.PHONY : tcp_echo/server.c.o
+src/host_byte_order/host_byte_order.cpp.o:
+	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o
+.PHONY : src/host_byte_order/host_byte_order.cpp.o
 
-tcp_echo/server.i: tcp_echo/server.c.i
+src/host_byte_order/host_byte_order.i: src/host_byte_order/host_byte_order.cpp.i
 
-.PHONY : tcp_echo/server.i
+.PHONY : src/host_byte_order/host_byte_order.i
 
 # target to preprocess a source file
-tcp_echo/server.c.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.i
-.PHONY : tcp_echo/server.c.i
+src/host_byte_order/host_byte_order.cpp.i:
+	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.i
+.PHONY : src/host_byte_order/host_byte_order.cpp.i
 
-tcp_echo/server.s: tcp_echo/server.c.s
+src/host_byte_order/host_byte_order.s: src/host_byte_order/host_byte_order.cpp.s
 
-.PHONY : tcp_echo/server.s
+.PHONY : src/host_byte_order/host_byte_order.s
 
 # target to generate assembly for a file
-tcp_echo/server.c.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/tcp_echo/server.c.s
-.PHONY : tcp_echo/server.c.s
+src/host_byte_order/host_byte_order.cpp.s:
+	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.s
+.PHONY : src/host_byte_order/host_byte_order.cpp.s
+
+src/inect_fun/ntop6_toy.o: src/inect_fun/ntop6_toy.cpp.o
+
+.PHONY : src/inect_fun/ntop6_toy.o
+
+# target to build an object file
+src/inect_fun/ntop6_toy.cpp.o:
+	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/src/inect_fun/ntop6_toy.cpp.o
+.PHONY : src/inect_fun/ntop6_toy.cpp.o
+
+src/inect_fun/ntop6_toy.i: src/inect_fun/ntop6_toy.cpp.i
+
+.PHONY : src/inect_fun/ntop6_toy.i
+
+# target to preprocess a source file
+src/inect_fun/ntop6_toy.cpp.i:
+	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/src/inect_fun/ntop6_toy.cpp.i
+.PHONY : src/inect_fun/ntop6_toy.cpp.i
+
+src/inect_fun/ntop6_toy.s: src/inect_fun/ntop6_toy.cpp.s
+
+.PHONY : src/inect_fun/ntop6_toy.s
+
+# target to generate assembly for a file
+src/inect_fun/ntop6_toy.cpp.s:
+	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/src/inect_fun/ntop6_toy.cpp.s
+.PHONY : src/inect_fun/ntop6_toy.cpp.s
+
+src/inect_fun/ntop_toy.o: src/inect_fun/ntop_toy.cpp.o
+
+.PHONY : src/inect_fun/ntop_toy.o
+
+# target to build an object file
+src/inect_fun/ntop_toy.cpp.o:
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o
+.PHONY : src/inect_fun/ntop_toy.cpp.o
+
+src/inect_fun/ntop_toy.i: src/inect_fun/ntop_toy.cpp.i
+
+.PHONY : src/inect_fun/ntop_toy.i
+
+# target to preprocess a source file
+src/inect_fun/ntop_toy.cpp.i:
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.i
+.PHONY : src/inect_fun/ntop_toy.cpp.i
+
+src/inect_fun/ntop_toy.s: src/inect_fun/ntop_toy.cpp.s
+
+.PHONY : src/inect_fun/ntop_toy.s
+
+# target to generate assembly for a file
+src/inect_fun/ntop_toy.cpp.s:
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s
+.PHONY : src/inect_fun/ntop_toy.cpp.s
+
+src/tcp_echo/clilent.o: src/tcp_echo/clilent.c.o
+
+.PHONY : src/tcp_echo/clilent.o
+
+# target to build an object file
+src/tcp_echo/clilent.c.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o
+.PHONY : src/tcp_echo/clilent.c.o
+
+src/tcp_echo/clilent.i: src/tcp_echo/clilent.c.i
+
+.PHONY : src/tcp_echo/clilent.i
+
+# target to preprocess a source file
+src/tcp_echo/clilent.c.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.i
+.PHONY : src/tcp_echo/clilent.c.i
+
+src/tcp_echo/clilent.s: src/tcp_echo/clilent.c.s
+
+.PHONY : src/tcp_echo/clilent.s
+
+# target to generate assembly for a file
+src/tcp_echo/clilent.c.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.s
+.PHONY : src/tcp_echo/clilent.c.s
+
+src/tcp_echo/server.o: src/tcp_echo/server.c.o
+
+.PHONY : src/tcp_echo/server.o
+
+# target to build an object file
+src/tcp_echo/server.c.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.o
+.PHONY : src/tcp_echo/server.c.o
+
+src/tcp_echo/server.i: src/tcp_echo/server.c.i
+
+.PHONY : src/tcp_echo/server.i
+
+# target to preprocess a source file
+src/tcp_echo/server.c.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.i
+.PHONY : src/tcp_echo/server.c.i
+
+src/tcp_echo/server.s: src/tcp_echo/server.c.s
+
+.PHONY : src/tcp_echo/server.s
+
+# target to generate assembly for a file
+src/tcp_echo/server.c.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.s
+.PHONY : src/tcp_echo/server.c.s
+
+src/tcp_echo/server.o: src/tcp_echo/server.cpp.o
+
+.PHONY : src/tcp_echo/server.o
+
+# target to build an object file
+src/tcp_echo/server.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.o
+.PHONY : src/tcp_echo/server.cpp.o
+
+src/tcp_echo/server.i: src/tcp_echo/server.cpp.i
+
+.PHONY : src/tcp_echo/server.i
+
+# target to preprocess a source file
+src/tcp_echo/server.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.i
+.PHONY : src/tcp_echo/server.cpp.i
+
+src/tcp_echo/server.s: src/tcp_echo/server.cpp.s
+
+.PHONY : src/tcp_echo/server.s
+
+# target to generate assembly for a file
+src/tcp_echo/server.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.s
+.PHONY : src/tcp_echo/server.cpp.s
 
 # Help Target
 help:
@@ -358,30 +398,34 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tcp_echo_serv_cpp"
 	@echo "... tcp_echo_cli"
 	@echo "... host_byte_order"
 	@echo "... ntop_toy"
 	@echo "... tcp_echo_serv"
 	@echo "... ntop6_toy"
 	@echo "... main"
-	@echo "... host_byte_order/host_byte_order.o"
-	@echo "... host_byte_order/host_byte_order.i"
-	@echo "... host_byte_order/host_byte_order.s"
-	@echo "... inect_fun/ntop6_toy.o"
-	@echo "... inect_fun/ntop6_toy.i"
-	@echo "... inect_fun/ntop6_toy.s"
-	@echo "... inect_fun/ntop_toy.o"
-	@echo "... inect_fun/ntop_toy.i"
-	@echo "... inect_fun/ntop_toy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tcp_echo/clilent.o"
-	@echo "... tcp_echo/clilent.i"
-	@echo "... tcp_echo/clilent.s"
-	@echo "... tcp_echo/server.o"
-	@echo "... tcp_echo/server.i"
-	@echo "... tcp_echo/server.s"
+	@echo "... src/host_byte_order/host_byte_order.o"
+	@echo "... src/host_byte_order/host_byte_order.i"
+	@echo "... src/host_byte_order/host_byte_order.s"
+	@echo "... src/inect_fun/ntop6_toy.o"
+	@echo "... src/inect_fun/ntop6_toy.i"
+	@echo "... src/inect_fun/ntop6_toy.s"
+	@echo "... src/inect_fun/ntop_toy.o"
+	@echo "... src/inect_fun/ntop_toy.i"
+	@echo "... src/inect_fun/ntop_toy.s"
+	@echo "... src/tcp_echo/clilent.o"
+	@echo "... src/tcp_echo/clilent.i"
+	@echo "... src/tcp_echo/clilent.s"
+	@echo "... src/tcp_echo/server.o"
+	@echo "... src/tcp_echo/server.i"
+	@echo "... src/tcp_echo/server.s"
+	@echo "... src/tcp_echo/server.o"
+	@echo "... src/tcp_echo/server.i"
+	@echo "... src/tcp_echo/server.s"
 .PHONY : help
 
 

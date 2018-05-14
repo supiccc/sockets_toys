@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.o"
+  "CMakeFiles/ntop6_toy.dir/src/inect_fun/ntop6_toy.cpp.o"
   "ntop6_toy.pdb"
   "ntop6_toy"
 )

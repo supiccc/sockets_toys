@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/suoiccc/development/C++/sockets_toy/tcp_echo/clilent.c" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o"
+  "/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/clilent.c" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../lib/unp.h"
   )
 
 # Targets to which this target links.

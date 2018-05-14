@@ -57,38 +57,38 @@ include CMakeFiles/ntop_toy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ntop_toy.dir/flags.make
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o: CMakeFiles/ntop_toy.dir/flags.make
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o: ../inect_fun/ntop_toy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o -c /Users/suoiccc/development/C++/sockets_toy/inect_fun/ntop_toy.cpp
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o: CMakeFiles/ntop_toy.dir/flags.make
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o: ../src/inect_fun/ntop_toy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o -c /Users/suoiccc/development/C++/sockets_toy/src/inect_fun/ntop_toy.cpp
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/inect_fun/ntop_toy.cpp > CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.i
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/src/inect_fun/ntop_toy.cpp > CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.i
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/inect_fun/ntop_toy.cpp -o CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.s
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/src/inect_fun/ntop_toy.cpp -o CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.requires:
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.requires:
 
-.PHONY : CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.requires
+.PHONY : CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.requires
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.provides: CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.provides.build
-.PHONY : CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.provides
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.provides: CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.provides.build
+.PHONY : CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.provides
 
-CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.provides.build: CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o
+CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.provides.build: CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o
 
 
 # Object files for target ntop_toy
 ntop_toy_OBJECTS = \
-"CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o"
+"CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o"
 
 # External object files for target ntop_toy
 ntop_toy_EXTERNAL_OBJECTS =
 
-ntop_toy: CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o
+ntop_toy: CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o
 ntop_toy: CMakeFiles/ntop_toy.dir/build.make
 ntop_toy: CMakeFiles/ntop_toy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ntop_toy"
@@ -99,7 +99,7 @@ CMakeFiles/ntop_toy.dir/build: ntop_toy
 
 .PHONY : CMakeFiles/ntop_toy.dir/build
 
-CMakeFiles/ntop_toy.dir/requires: CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o.requires
+CMakeFiles/ntop_toy.dir/requires: CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o.requires
 
 .PHONY : CMakeFiles/ntop_toy.dir/requires
 

@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.o  -o ntop6_toy  -L/Users/suoiccc/development/C++/sockets_toy/lib/libunp.a -Wl,-rpath,/Users/suoiccc/development/C++/sockets_toy/lib/libunp.a -lunp 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ntop6_toy.dir/src/inect_fun/ntop6_toy.cpp.o  -o ntop6_toy -lunp 

@@ -57,38 +57,38 @@ include CMakeFiles/tcp_echo_cli.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tcp_echo_cli.dir/flags.make
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o: CMakeFiles/tcp_echo_cli.dir/flags.make
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o: ../tcp_echo/clilent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o   -c /Users/suoiccc/development/C++/sockets_toy/tcp_echo/clilent.c
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o: CMakeFiles/tcp_echo_cli.dir/flags.make
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o: ../src/tcp_echo/clilent.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o   -c /Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/clilent.c
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/tcp_echo/clilent.c > CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.i
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/clilent.c > CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.i
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/tcp_echo/clilent.c -o CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.s
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/clilent.c -o CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.s
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.requires:
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.requires:
 
-.PHONY : CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.requires
+.PHONY : CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.requires
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.provides: CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.requires
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.provides.build
-.PHONY : CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.provides
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.provides: CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.requires
+	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.provides.build
+.PHONY : CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.provides
 
-CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.provides.build: CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o
+CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.provides.build: CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o
 
 
 # Object files for target tcp_echo_cli
 tcp_echo_cli_OBJECTS = \
-"CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o"
+"CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o"
 
 # External object files for target tcp_echo_cli
 tcp_echo_cli_EXTERNAL_OBJECTS =
 
-tcp_echo_cli: CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o
+tcp_echo_cli: CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o
 tcp_echo_cli: CMakeFiles/tcp_echo_cli.dir/build.make
 tcp_echo_cli: CMakeFiles/tcp_echo_cli.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tcp_echo_cli"
@@ -99,7 +99,7 @@ CMakeFiles/tcp_echo_cli.dir/build: tcp_echo_cli
 
 .PHONY : CMakeFiles/tcp_echo_cli.dir/build
 
-CMakeFiles/tcp_echo_cli.dir/requires: CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o.requires
+CMakeFiles/tcp_echo_cli.dir/requires: CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o.requires
 
 .PHONY : CMakeFiles/tcp_echo_cli.dir/requires
 

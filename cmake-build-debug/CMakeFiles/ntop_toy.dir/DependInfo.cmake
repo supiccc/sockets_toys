@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/suoiccc/development/C++/sockets_toy/inect_fun/ntop_toy.cpp" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o"
+  "/Users/suoiccc/development/C++/sockets_toy/src/inect_fun/ntop_toy.cpp" "/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../lib/unp.h"
   )
 
 # Targets to which this target links.

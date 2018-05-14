@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o"
+  "CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o"
   "tcp_echo_cli.pdb"
   "tcp_echo_cli"
 )

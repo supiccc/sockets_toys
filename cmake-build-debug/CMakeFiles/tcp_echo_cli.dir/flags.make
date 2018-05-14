@@ -6,5 +6,5 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/suoiccc/development/C++/sockets_toy/lib/unp.h 
+C_INCLUDES = 
 

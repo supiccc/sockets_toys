@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tcp_echo_cli.dir/tcp_echo/clilent.c.o  -o tcp_echo_cli  -L/Users/suoiccc/development/C++/sockets_toy/lib/libunp.a -Wl,-rpath,/Users/suoiccc/development/C++/sockets_toy/lib/libunp.a -lunp 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o  -o tcp_echo_cli -lunp 

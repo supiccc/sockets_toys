@@ -2,7 +2,7 @@
 // Created by 陈树沛 on 12/05/2018.
 //
 
-#include "../lib/unp.h"
+#include "unp.h"
 
 int main(int argc, char ** argv) {
     int listenfd, connfd;
@@ -33,6 +33,4 @@ int main(int argc, char ** argv) {
 
         Close(connfd);
     }
-
-
 }

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o"
+  "CMakeFiles/host_byte_order.dir/src/host_byte_order/host_byte_order.cpp.o"
   "host_byte_order.pdb"
   "host_byte_order"
 )
