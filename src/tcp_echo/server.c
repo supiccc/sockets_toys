@@ -3,7 +3,22 @@
 //
 
 #include "unp.h"
-
+//void str_echo1(int sockfd) {
+//    ssize_t n;
+//    char buf[MAXLINE];
+//    long arg1, arg2;
+//
+//    for ( ; ; ) {
+//        if ((n = Readline(sockfd, buf, MAXLINE) == 0))
+//            return;
+//        if (sscanf(buf, "%ld%ld", &arg1, &arg2) == 2)
+//            snprintf(buf, sizeof(buf), "%ld", arg1 + arg2);
+//        else
+//            snprintf(buf, sizeof(buf), "input error!");
+//        n = strlen(buf);
+//        Writen(sockfd, buf, n);
+//    }
+//}
 int main(int argc, char ** argv) {
     int listenfd, connfd;
     struct sockaddr_in cliaddr, servaddr;

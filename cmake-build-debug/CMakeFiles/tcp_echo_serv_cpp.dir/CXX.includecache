@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/suoiccc/development/C++/sockets_toy/tcp_echo/server.cpp
+/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/server.cpp
 sys/socket.h
 -
 iostream
@@ -20,5 +20,7 @@ unistd.h
 csignal
 -
 sys/wait.h
+-
+sys/select.h
 -
 

@@ -7,10 +7,14 @@
 #IncludeRegexTransform: 
 
 /Users/suoiccc/development/C++/sockets_toy/main.cpp
-stdio.h
+cstdio
 -
-stdlib.h
+cstdlib
 -
 unistd.h
+-
+string
+-
+iostream
 -
 

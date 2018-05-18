@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tcp_echo_client_cpp
+
+# Build rule for target.
+tcp_echo_client_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_client_cpp
+.PHONY : tcp_echo_client_cpp
+
+# fast build rule for target.
+tcp_echo_client_cpp/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/build
+.PHONY : tcp_echo_client_cpp/fast
+
+#=============================================================================
 # Target rules for targets named tcp_echo_serv_cpp
 
 # Build rule for target.
@@ -309,6 +322,33 @@ src/inect_fun/ntop_toy.cpp.s:
 	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s
 .PHONY : src/inect_fun/ntop_toy.cpp.s
 
+src/tcp_echo/client.o: src/tcp_echo/client.cpp.o
+
+.PHONY : src/tcp_echo/client.o
+
+# target to build an object file
+src/tcp_echo/client.cpp.o:
+	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.o
+.PHONY : src/tcp_echo/client.cpp.o
+
+src/tcp_echo/client.i: src/tcp_echo/client.cpp.i
+
+.PHONY : src/tcp_echo/client.i
+
+# target to preprocess a source file
+src/tcp_echo/client.cpp.i:
+	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.i
+.PHONY : src/tcp_echo/client.cpp.i
+
+src/tcp_echo/client.s: src/tcp_echo/client.cpp.s
+
+.PHONY : src/tcp_echo/client.s
+
+# target to generate assembly for a file
+src/tcp_echo/client.cpp.s:
+	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.s
+.PHONY : src/tcp_echo/client.cpp.s
+
 src/tcp_echo/clilent.o: src/tcp_echo/clilent.c.o
 
 .PHONY : src/tcp_echo/clilent.o
@@ -398,6 +438,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tcp_echo_client_cpp"
 	@echo "... tcp_echo_serv_cpp"
 	@echo "... tcp_echo_cli"
 	@echo "... host_byte_order"
@@ -417,6 +458,9 @@ help:
 	@echo "... src/inect_fun/ntop_toy.o"
 	@echo "... src/inect_fun/ntop_toy.i"
 	@echo "... src/inect_fun/ntop_toy.s"
+	@echo "... src/tcp_echo/client.o"
+	@echo "... src/tcp_echo/client.i"
+	@echo "... src/tcp_echo/client.s"
 	@echo "... src/tcp_echo/clilent.o"
 	@echo "... src/tcp_echo/clilent.i"
 	@echo "... src/tcp_echo/clilent.s"

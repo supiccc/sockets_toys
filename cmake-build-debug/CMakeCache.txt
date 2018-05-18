@@ -195,6 +195,9 @@ sockets_toy_BINARY_DIR:STATIC=/Users/suoiccc/development/C++/sockets_toy/cmake-b
 //Value Computed by CMake
 sockets_toy_SOURCE_DIR:STATIC=/Users/suoiccc/development/C++/sockets_toy
 
+//Dependencies for target
+unp_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

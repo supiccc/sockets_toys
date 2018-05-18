@@ -9,29 +9,35 @@
 #include <unistd.h>
 #include <csignal>
 #include <sys/wait.h>
+#include <sys/select.h>
+
 
 
 #define sockaddr struct sockaddr
-#define MAXLINE 2048
+#define MAXLINE 4096
 
 void str_echo(int sockfd) {
     ssize_t n;
     char buf[MAXLINE];
+    long arg1, arg2;
     again:
-    while ((n = read(sockfd, buf, MAXLINE)) > 0)
+    while ((n = read(sockfd, buf, MAXLINE)) > 0) {
         write(sockfd, buf, n);
+    }
+
     if (n < 0 && errno == EINTR)
         goto again;
     else if (n < 0)
         std::cout << "str_echo: read error";
 }
 
+
 void sig_chld(int signo) {
     // signal handler
     pid_t pid;
     int stat;
 
-//    pid = wait(&stat); 如果多个 SIGCHLD 信号同时到达，wait 只能获取第一个停止的进程
+    // pid = wait(&stat); 如果多个 SIGCHLD 信号同时到达，wait 只能获取第一个停止的进程
     while ((pid = waitpid(-1, &stat, WNOHANG)) > 0) // WNOHANG 告知 waitpid 在有尚未终止的子进程在运行时不要阻塞
         std::cout << "Child " << pid << " terminated" << std::endl;
 
@@ -60,10 +66,14 @@ int main() {
     while (1) {
         clilen = sizeof(cliaddr);
         if ((connfd = accept(listenfd, (sockaddr *)&cliaddr, &clilen)) < 0) {
-            if (errno == EINTR)
+            if (errno == EINTR) {
                 continue;
-            else
+            }
+            else {
                 std::cout << "accpt error";
+                break;
+            }
+
         }
 
         while ((childpid = fork()) == 0) {
@@ -74,7 +84,6 @@ int main() {
         close(connfd);
     }
 
-
-
+    exit(0);
 
 }

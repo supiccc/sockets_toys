@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/suoiccc/development/C++/sockets_toy/include/config.h
+../include/config.h
 
-/Users/suoiccc/development/C++/sockets_toy/include/unp.h
+../include/unp.h
 config.h
-/Users/suoiccc/development/C++/sockets_toy/include/config.h
+../include/config.h
 sys/types.h
 -
 sys/socket.h
@@ -76,9 +76,9 @@ net/if_dl.h
 netinet/sctp.h
 -
 ../lib/addrinfo.h
-/Users/suoiccc/development/C++/sockets_toy/lib/addrinfo.h
+../lib/addrinfo.h
 
 /Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/clilent.c
-../../include/unp.h
-/Users/suoiccc/development/C++/sockets_toy/include/unp.h
+unp.h
+/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/unp.h
 
