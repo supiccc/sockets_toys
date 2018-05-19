@@ -11,7 +11,7 @@
 #include <sys/wait.h>
 #include <sys/select.h>
 
-
+// fork写法
 
 #define sockaddr struct sockaddr
 #define MAXLINE 4096

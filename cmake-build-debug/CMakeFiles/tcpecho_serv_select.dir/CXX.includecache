@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/server_select.cpp
+sys/socket.h
+-
+iostream
+-
+cstdio
+-
+netinet/in.h
+-
+unistd.h
+-
+csignal
+-
+sys/wait.h
+-
+sys/select.h
+-
+

@@ -111,43 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tcp_echo_client_cpp
+# Target rules for targets named tcp_echo_client
 
 # Build rule for target.
-tcp_echo_client_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_client_cpp
-.PHONY : tcp_echo_client_cpp
+tcp_echo_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_client
+.PHONY : tcp_echo_client
 
 # fast build rule for target.
-tcp_echo_client_cpp/fast:
-	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/build
-.PHONY : tcp_echo_client_cpp/fast
+tcp_echo_client/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/build
+.PHONY : tcp_echo_client/fast
 
 #=============================================================================
-# Target rules for targets named tcp_echo_serv_cpp
+# Target rules for targets named tcpecho_serv_select
 
 # Build rule for target.
-tcp_echo_serv_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_serv_cpp
-.PHONY : tcp_echo_serv_cpp
+tcpecho_serv_select: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpecho_serv_select
+.PHONY : tcpecho_serv_select
 
 # fast build rule for target.
-tcp_echo_serv_cpp/fast:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/build
-.PHONY : tcp_echo_serv_cpp/fast
+tcpecho_serv_select/fast:
+	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/build
+.PHONY : tcpecho_serv_select/fast
 
 #=============================================================================
-# Target rules for targets named tcp_echo_cli
+# Target rules for targets named tcp_echo_serv_fork
 
 # Build rule for target.
-tcp_echo_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_cli
-.PHONY : tcp_echo_cli
+tcp_echo_serv_fork: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_serv_fork
+.PHONY : tcp_echo_serv_fork
 
 # fast build rule for target.
-tcp_echo_cli/fast:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/build
-.PHONY : tcp_echo_cli/fast
+tcp_echo_serv_fork/fast:
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/build
+.PHONY : tcp_echo_serv_fork/fast
 
 #=============================================================================
 # Target rules for targets named host_byte_order
@@ -161,32 +161,6 @@ host_byte_order: cmake_check_build_system
 host_byte_order/fast:
 	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/build
 .PHONY : host_byte_order/fast
-
-#=============================================================================
-# Target rules for targets named ntop_toy
-
-# Build rule for target.
-ntop_toy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ntop_toy
-.PHONY : ntop_toy
-
-# fast build rule for target.
-ntop_toy/fast:
-	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/build
-.PHONY : ntop_toy/fast
-
-#=============================================================================
-# Target rules for targets named tcp_echo_serv
-
-# Build rule for target.
-tcp_echo_serv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tcp_echo_serv
-.PHONY : tcp_echo_serv
-
-# fast build rule for target.
-tcp_echo_serv/fast:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/build
-.PHONY : tcp_echo_serv/fast
 
 #=============================================================================
 # Target rules for targets named ntop6_toy
@@ -213,6 +187,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named ntop_toy
+
+# Build rule for target.
+ntop_toy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ntop_toy
+.PHONY : ntop_toy
+
+# fast build rule for target.
+ntop_toy/fast:
+	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/build
+.PHONY : ntop_toy/fast
 
 main.o: main.cpp.o
 
@@ -328,7 +315,7 @@ src/tcp_echo/client.o: src/tcp_echo/client.cpp.o
 
 # target to build an object file
 src/tcp_echo/client.cpp.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.o
+	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/src/tcp_echo/client.cpp.o
 .PHONY : src/tcp_echo/client.cpp.o
 
 src/tcp_echo/client.i: src/tcp_echo/client.cpp.i
@@ -337,7 +324,7 @@ src/tcp_echo/client.i: src/tcp_echo/client.cpp.i
 
 # target to preprocess a source file
 src/tcp_echo/client.cpp.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.i
+	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/src/tcp_echo/client.cpp.i
 .PHONY : src/tcp_echo/client.cpp.i
 
 src/tcp_echo/client.s: src/tcp_echo/client.cpp.s
@@ -346,62 +333,8 @@ src/tcp_echo/client.s: src/tcp_echo/client.cpp.s
 
 # target to generate assembly for a file
 src/tcp_echo/client.cpp.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_client_cpp.dir/build.make CMakeFiles/tcp_echo_client_cpp.dir/src/tcp_echo/client.cpp.s
+	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/src/tcp_echo/client.cpp.s
 .PHONY : src/tcp_echo/client.cpp.s
-
-src/tcp_echo/clilent.o: src/tcp_echo/clilent.c.o
-
-.PHONY : src/tcp_echo/clilent.o
-
-# target to build an object file
-src/tcp_echo/clilent.c.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.o
-.PHONY : src/tcp_echo/clilent.c.o
-
-src/tcp_echo/clilent.i: src/tcp_echo/clilent.c.i
-
-.PHONY : src/tcp_echo/clilent.i
-
-# target to preprocess a source file
-src/tcp_echo/clilent.c.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.i
-.PHONY : src/tcp_echo/clilent.c.i
-
-src/tcp_echo/clilent.s: src/tcp_echo/clilent.c.s
-
-.PHONY : src/tcp_echo/clilent.s
-
-# target to generate assembly for a file
-src/tcp_echo/clilent.c.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_cli.dir/build.make CMakeFiles/tcp_echo_cli.dir/src/tcp_echo/clilent.c.s
-.PHONY : src/tcp_echo/clilent.c.s
-
-src/tcp_echo/server.o: src/tcp_echo/server.c.o
-
-.PHONY : src/tcp_echo/server.o
-
-# target to build an object file
-src/tcp_echo/server.c.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.o
-.PHONY : src/tcp_echo/server.c.o
-
-src/tcp_echo/server.i: src/tcp_echo/server.c.i
-
-.PHONY : src/tcp_echo/server.i
-
-# target to preprocess a source file
-src/tcp_echo/server.c.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.i
-.PHONY : src/tcp_echo/server.c.i
-
-src/tcp_echo/server.s: src/tcp_echo/server.c.s
-
-.PHONY : src/tcp_echo/server.s
-
-# target to generate assembly for a file
-src/tcp_echo/server.c.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv.dir/build.make CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.s
-.PHONY : src/tcp_echo/server.c.s
 
 src/tcp_echo/server.o: src/tcp_echo/server.cpp.o
 
@@ -409,7 +342,7 @@ src/tcp_echo/server.o: src/tcp_echo/server.cpp.o
 
 # target to build an object file
 src/tcp_echo/server.cpp.o:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.o
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/src/tcp_echo/server.cpp.o
 .PHONY : src/tcp_echo/server.cpp.o
 
 src/tcp_echo/server.i: src/tcp_echo/server.cpp.i
@@ -418,7 +351,7 @@ src/tcp_echo/server.i: src/tcp_echo/server.cpp.i
 
 # target to preprocess a source file
 src/tcp_echo/server.cpp.i:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.i
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/src/tcp_echo/server.cpp.i
 .PHONY : src/tcp_echo/server.cpp.i
 
 src/tcp_echo/server.s: src/tcp_echo/server.cpp.s
@@ -427,8 +360,35 @@ src/tcp_echo/server.s: src/tcp_echo/server.cpp.s
 
 # target to generate assembly for a file
 src/tcp_echo/server.cpp.s:
-	$(MAKE) -f CMakeFiles/tcp_echo_serv_cpp.dir/build.make CMakeFiles/tcp_echo_serv_cpp.dir/src/tcp_echo/server.cpp.s
+	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/src/tcp_echo/server.cpp.s
 .PHONY : src/tcp_echo/server.cpp.s
+
+src/tcp_echo/server_select.o: src/tcp_echo/server_select.cpp.o
+
+.PHONY : src/tcp_echo/server_select.o
+
+# target to build an object file
+src/tcp_echo/server_select.cpp.o:
+	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/src/tcp_echo/server_select.cpp.o
+.PHONY : src/tcp_echo/server_select.cpp.o
+
+src/tcp_echo/server_select.i: src/tcp_echo/server_select.cpp.i
+
+.PHONY : src/tcp_echo/server_select.i
+
+# target to preprocess a source file
+src/tcp_echo/server_select.cpp.i:
+	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/src/tcp_echo/server_select.cpp.i
+.PHONY : src/tcp_echo/server_select.cpp.i
+
+src/tcp_echo/server_select.s: src/tcp_echo/server_select.cpp.s
+
+.PHONY : src/tcp_echo/server_select.s
+
+# target to generate assembly for a file
+src/tcp_echo/server_select.cpp.s:
+	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/src/tcp_echo/server_select.cpp.s
+.PHONY : src/tcp_echo/server_select.cpp.s
 
 # Help Target
 help:
@@ -437,15 +397,14 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... tcp_echo_client"
 	@echo "... edit_cache"
-	@echo "... tcp_echo_client_cpp"
-	@echo "... tcp_echo_serv_cpp"
-	@echo "... tcp_echo_cli"
+	@echo "... tcpecho_serv_select"
+	@echo "... tcp_echo_serv_fork"
 	@echo "... host_byte_order"
-	@echo "... ntop_toy"
-	@echo "... tcp_echo_serv"
 	@echo "... ntop6_toy"
 	@echo "... main"
+	@echo "... ntop_toy"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -461,15 +420,12 @@ help:
 	@echo "... src/tcp_echo/client.o"
 	@echo "... src/tcp_echo/client.i"
 	@echo "... src/tcp_echo/client.s"
-	@echo "... src/tcp_echo/clilent.o"
-	@echo "... src/tcp_echo/clilent.i"
-	@echo "... src/tcp_echo/clilent.s"
 	@echo "... src/tcp_echo/server.o"
 	@echo "... src/tcp_echo/server.i"
 	@echo "... src/tcp_echo/server.s"
-	@echo "... src/tcp_echo/server.o"
-	@echo "... src/tcp_echo/server.i"
-	@echo "... src/tcp_echo/server.s"
+	@echo "... src/tcp_echo/server_select.o"
+	@echo "... src/tcp_echo/server_select.i"
+	@echo "... src/tcp_echo/server_select.s"
 .PHONY : help
 
 

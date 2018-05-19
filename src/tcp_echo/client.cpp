@@ -8,7 +8,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <sys/select.h>
-#include <zconf.h>
+#include <unistd.h>
 
 #define SERV_PORT 9877
 #define MAXLINE 4089
@@ -43,7 +43,7 @@ void str_cli(FILE * fp, int sockfd) {
         if (FD_ISSET(sockfd, &rset)) {
             if ((n = read(sockfd, buff, MAXLINE)) == 0) {
                 if (stdineof == 0) {
-                    //std::cout << "服务器中断！";
+                    std::cout << "服务器中断！";
                     return;
                 } else {
                     std::cout << "str_cli: server terminated prematurely";

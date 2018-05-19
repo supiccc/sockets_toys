@@ -2,14 +2,13 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="sockets_toy" targetName="tcp_echo_cli" />
-      <config projectName="sockets_toy" targetName="tcp_echo_client_cpp" />
-      <config projectName="sockets_toy" targetName="ntop6_toy" />
-      <config projectName="sockets_toy" targetName="tcp_echo_serv_cpp" />
-      <config projectName="sockets_toy" targetName="main" />
-      <config projectName="sockets_toy" targetName="tcp_echo_serv" />
       <config projectName="sockets_toy" targetName="ntop_toy" />
+      <config projectName="sockets_toy" targetName="ntop6_toy" />
       <config projectName="sockets_toy" targetName="host_byte_order" />
+      <config projectName="sockets_toy" targetName="main" />
+      <config projectName="sockets_toy" targetName="tcpecho_serv_select" />
+      <config projectName="sockets_toy" targetName="tcp_echo_client" />
+      <config projectName="sockets_toy" targetName="tcp_echo_serv_fork" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -19,56 +18,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7a081ae-9067-424f-a565-f5296f122620" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tcp_echo/client.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tcp_echo/server_select.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/host_byte_order.dir/host_byte_order/host_byte_order.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/main.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop6_toy.dir/inect_fun/ntop6_toy.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ntop_toy.dir/inect_fun/ntop_toy.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_cli.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv.dir/src/tcp_echo/server.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_client_cpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_client_cpp.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tcp_echo_serv_cpp.dir/tcp_echo/server.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/host_byte_order" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ntop6_toy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ntop_toy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/sockets_toy.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sockets_toy.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_cli" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_cli" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv_cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv_cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tcp_echo/server.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_echo/server.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_cli" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_client_cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tcp_echo_serv_cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_echo/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_echo/client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_echo/clilent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tcp_echo/server.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tcp_echo/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/tcp_echo/server.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -85,46 +69,17 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+            <state relative-caret-position="528">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unp.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/unp.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="307" column="18" selection-start-line="307" selection-start-column="18" selection-end-line="307" selection-end-column="18" />
-              <folding>
-                <element signature="e#474#524#0" expanded="true" />
-                <element signature="e#581#705#0" expanded="true" />
-                <element signature="e#2063#2088#0" expanded="true" />
-                <element signature="e#2178#2287#0" expanded="true" />
-                <element signature="e#2316#2413#0" expanded="true" />
-                <element signature="e#2479#2697#0" expanded="true" />
-                <element signature="e#2749#2861#0" expanded="true" />
-                <element signature="e#4120#4200#0" expanded="true" />
-                <element signature="e#4227#4310#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clilent.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp_echo/clilent.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
-              <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+            <state relative-caret-position="145">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="e#40#63#0" expanded="true" />
               </folding>
@@ -132,13 +87,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="unistd.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/unistd.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="639">
+              <caret line="470" column="9" selection-start-line="470" selection-start-column="9" selection-end-line="470" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="client.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tcp_echo/client.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+            <state relative-caret-position="473">
+              <caret line="75" column="65" lean-forward="true" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
               <folding>
                 <element signature="e#40#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server_select.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tcp_echo/server_select.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="562">
+              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +123,7 @@
       <file leaf-file-name="inet_pton.c" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/unpv13e/libfree/inet_pton.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="1386">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
@@ -158,15 +134,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6798">
               <caret line="309" column="8" selection-start-line="309" selection-start-column="8" selection-end-line="309" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -238,9 +205,10 @@
         <option value="$PROJECT_DIR$/src/tcp_echo/clilent.c" />
         <option value="$PROJECT_DIR$/src/tcp_echo/server.c" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/src/tcp_echo/server.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/tcp_echo/client.cpp" />
-        <option value="$PROJECT_DIR$/src/tcp_echo/server.cpp" />
+        <option value="$PROJECT_DIR$/src/tcp_echo/server_select.cpp" />
       </list>
     </option>
   </component>
@@ -254,7 +222,7 @@
     <packageJsonPaths />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
     <option name="height" value="1005" />
@@ -336,26 +304,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.tcp_echo_client_cpp">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="host_byte_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="host_byte_order" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="ntop6_toy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="ntop6_toy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="ntop_toy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="ntop_toy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="tcp_echo_cli" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_cli" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="tcp_echo_client_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_client_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client_cpp" />
-    <configuration name="tcp_echo_serv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_serv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_serv_cpp" />
-    <configuration name="tcp_echo_serv_cpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_serv_cpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_serv_cpp" />
+  <component name="RunManager" selected="Application.tcp_echo_client">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="host_byte_order" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="host_byte_order" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" />
+    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" />
+    <configuration name="ntop6_toy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="ntop6_toy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" />
+    <configuration name="ntop_toy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="ntop_toy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" />
+    <configuration name="tcp_echo_client" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcp_echo_client" />
+    <configuration name="tcp_echo_serv_fork" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcp_echo_serv_fork" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcpecho_serv_select" />
+    <configuration name="tcpecho_serv_select" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sockets_toy" TARGET_NAME="tcpecho_serv_select" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sockets_toy" RUN_TARGET_NAME="tcpecho_serv_select" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.host_byte_order" />
       <item itemvalue="Application.main" />
       <item itemvalue="Application.ntop6_toy" />
       <item itemvalue="Application.ntop_toy" />
-      <item itemvalue="Application.tcp_echo_cli" />
-      <item itemvalue="Application.tcp_echo_client_cpp" />
-      <item itemvalue="Application.tcp_echo_serv" />
-      <item itemvalue="Application.tcp_echo_serv_cpp" />
+      <item itemvalue="Application.tcp_echo_client" />
+      <item itemvalue="Application.tcp_echo_serv_fork" />
+      <item itemvalue="Application.tcpecho_serv_select" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -385,24 +351,26 @@
       <workItem from="1526455065437" duration="2213000" />
       <workItem from="1526488411715" duration="613000" />
       <workItem from="1526570243938" duration="1178000" />
-      <workItem from="1526658896056" duration="5627000" />
+      <workItem from="1526658896056" duration="8834000" />
+      <workItem from="1526697511839" duration="96000" />
+      <workItem from="1526697646219" duration="702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87623000" />
+    <option name="totallyTimeSpent" value="91628000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1005" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3319012" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32760474" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2244898" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2244898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -451,34 +419,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/arpa/inet.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1628">
-          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/sys/_types/_in_addr_t.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/host_byte_order/host_byte_order.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -680,23 +620,6 @@
       </provider>
     </entry>
     <entry file="file:///usr/include/unp.h" />
-    <entry file="file:///usr/include/unistd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10868">
-          <caret line="494" column="9" selection-start-line="494" selection-start-column="9" selection-end-line="494" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inect_fun/ntop_toy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cstdio">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-675">
@@ -721,20 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/_stdio.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="686">
@@ -742,13 +651,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp_echo/clilent.c">
+    <entry file="file://$USER_HOME$/Downloads/unpv13e/libfree/inet_pton.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        <state relative-caret-position="1386">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/inect_fun/ntop_toy.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.c" />
+    <entry file="file://$PROJECT_DIR$/src/tcp_echo/clilent.c" />
     <entry file="file://$PROJECT_DIR$/include/unp.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -767,27 +688,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/unpv13e/libfree/inet_pton.c">
+    <entry file="file:///usr/include/sys/_types/_fd_def.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="195">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/sys/_types/_fd_setsize.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="126" column="51" selection-start-line="126" selection-start-column="51" selection-end-line="126" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/unistd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="470" column="9" selection-start-line="470" selection-start-column="9" selection-end-line="470" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#40#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tcp_echo/client.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="79" column="12" lean-forward="true" selection-start-line="79" selection-start-column="12" selection-end-line="79" selection-end-column="12" />
+        <state relative-caret-position="473">
+          <caret line="75" column="65" lean-forward="true" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
           <folding>
             <element signature="e#40#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp_echo/server.cpp">
+    <entry file="file://$PROJECT_DIR$/src/tcp_echo/server_select.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        <state relative-caret-position="562">
+          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
           <folding>
             <element signature="e#40#63#0" expanded="true" />
           </folding>

@@ -18,12 +18,9 @@ add_executable(host_byte_order src/host_byte_order/host_byte_order.cpp)
 
 add_executable(main main.cpp)
 
+add_executable(tcp_echo_serv_fork src/tcp_echo/server.cpp)
 
-add_executable(tcp_echo_serv src/tcp_echo/server.c)
-#target_link_libraries(tcp_echo_serv unp)
+add_executable(tcpecho_serv_select src/tcp_echo/server_select.cpp)
 
-add_executable(tcp_echo_cli src/tcp_echo/clilent.c)
+add_executable(tcp_echo_client src/tcp_echo/client.cpp)
 
-add_executable(tcp_echo_serv_cpp src/tcp_echo/server.cpp)
-
-add_executable(tcp_echo_client_cpp src/tcp_echo/client.cpp)

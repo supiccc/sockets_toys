@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/suoiccc/development/C++/sockets_toy/host_byte_order/host_byte_order.cpp
-iostream
--
-../lib/unp.h
-/Users/suoiccc/development/C++/sockets_toy/lib/unp.h
+/Users/suoiccc/development/C++/sockets_toy/include/config.h
 
-/Users/suoiccc/development/C++/sockets_toy/lib/config.h
-
-/Users/suoiccc/development/C++/sockets_toy/lib/unp.h
+/Users/suoiccc/development/C++/sockets_toy/include/unp.h
 config.h
-/Users/suoiccc/development/C++/sockets_toy/lib/config.h
+/Users/suoiccc/development/C++/sockets_toy/include/config.h
 sys/types.h
 -
 sys/socket.h
@@ -83,4 +77,10 @@ netinet/sctp.h
 -
 ../lib/addrinfo.h
 /Users/suoiccc/development/C++/sockets_toy/lib/addrinfo.h
+
+/Users/suoiccc/development/C++/sockets_toy/src/host_byte_order/host_byte_order.cpp
+iostream
+-
+../../include/unp.h
+/Users/suoiccc/development/C++/sockets_toy/include/unp.h
 
