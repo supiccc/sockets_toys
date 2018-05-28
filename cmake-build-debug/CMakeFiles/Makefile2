@@ -60,13 +60,124 @@ CMAKE_SOURCE_DIR = /Users/suoiccc/development/C++/sockets_toy
 CMAKE_BINARY_DIR = /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/echo_server.dir/all:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/depend
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target echo_server"
+.PHONY : CMakeFiles/echo_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/echo_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/echo_server.dir/rule
+
+# Convenience name for target.
+echo_server: CMakeFiles/echo_server.dir/rule
+
+.PHONY : echo_server
+
+# clean rule for target.
+CMakeFiles/echo_server.dir/clean:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/clean
+.PHONY : CMakeFiles/echo_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/echo_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/udp_echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/udp_echo_server.dir/all:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/depend
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target udp_echo_server"
+.PHONY : CMakeFiles/udp_echo_server.dir/all
+
+# Include target in all.
+all: CMakeFiles/udp_echo_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udp_echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/udp_echo_server.dir/rule
+
+# Convenience name for target.
+udp_echo_server: CMakeFiles/udp_echo_server.dir/rule
+
+.PHONY : udp_echo_server
+
+# clean rule for target.
+CMakeFiles/udp_echo_server.dir/clean:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/clean
+.PHONY : CMakeFiles/udp_echo_server.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/udp_echo_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/udp_echo_client.dir
+
+# All Build rule for target.
+CMakeFiles/udp_echo_client.dir/all:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/depend
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target udp_echo_client"
+.PHONY : CMakeFiles/udp_echo_client.dir/all
+
+# Include target in all.
+all: CMakeFiles/udp_echo_client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/udp_echo_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_echo_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/udp_echo_client.dir/rule
+
+# Convenience name for target.
+udp_echo_client: CMakeFiles/udp_echo_client.dir/rule
+
+.PHONY : udp_echo_client
+
+# clean rule for target.
+CMakeFiles/udp_echo_client.dir/clean:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/clean
+.PHONY : CMakeFiles/udp_echo_client.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/udp_echo_client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tcp_echo_client.dir
 
 # All Build rule for target.
 CMakeFiles/tcp_echo_client.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_echo_client.dir/build.make CMakeFiles/tcp_echo_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target tcp_echo_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target tcp_echo_client"
 .PHONY : CMakeFiles/tcp_echo_client.dir/all
 
 # Include target in all.
@@ -103,7 +214,7 @@ clean: CMakeFiles/tcp_echo_client.dir/clean
 CMakeFiles/tcpecho_serv_select.dir/all:
 	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/depend
 	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target tcpecho_serv_select"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target tcpecho_serv_select"
 .PHONY : CMakeFiles/tcpecho_serv_select.dir/all
 
 # Include target in all.
@@ -140,7 +251,7 @@ clean: CMakeFiles/tcpecho_serv_select.dir/clean
 CMakeFiles/tcp_echo_serv_fork.dir/all:
 	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/depend
 	$(MAKE) -f CMakeFiles/tcp_echo_serv_fork.dir/build.make CMakeFiles/tcp_echo_serv_fork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target tcp_echo_serv_fork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target tcp_echo_serv_fork"
 .PHONY : CMakeFiles/tcp_echo_serv_fork.dir/all
 
 # Include target in all.
@@ -177,7 +288,7 @@ clean: CMakeFiles/tcp_echo_serv_fork.dir/clean
 CMakeFiles/host_byte_order.dir/all:
 	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/depend
 	$(MAKE) -f CMakeFiles/host_byte_order.dir/build.make CMakeFiles/host_byte_order.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target host_byte_order"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target host_byte_order"
 .PHONY : CMakeFiles/host_byte_order.dir/all
 
 # Include target in all.
@@ -214,7 +325,7 @@ clean: CMakeFiles/host_byte_order.dir/clean
 CMakeFiles/ntop6_toy.dir/all:
 	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/depend
 	$(MAKE) -f CMakeFiles/ntop6_toy.dir/build.make CMakeFiles/ntop6_toy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target ntop6_toy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ntop6_toy"
 .PHONY : CMakeFiles/ntop6_toy.dir/all
 
 # Include target in all.
@@ -251,7 +362,7 @@ clean: CMakeFiles/ntop6_toy.dir/clean
 CMakeFiles/main.dir/all:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Include target in all.
@@ -288,7 +399,7 @@ clean: CMakeFiles/main.dir/clean
 CMakeFiles/ntop_toy.dir/all:
 	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/depend
 	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target ntop_toy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target ntop_toy"
 .PHONY : CMakeFiles/ntop_toy.dir/all
 
 # Include target in all.

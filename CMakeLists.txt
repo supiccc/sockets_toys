@@ -24,3 +24,9 @@ add_executable(tcpecho_serv_select src/tcp_echo/server_select.cpp)
 
 add_executable(tcp_echo_client src/tcp_echo/client.cpp)
 
+add_executable(udp_echo_client src/udp_echo/client.cpp)
+
+add_executable(udp_echo_server src/udp_echo/server.cpp)
+
+add_executable(echo_server src/serv_echo/server.cpp)
+

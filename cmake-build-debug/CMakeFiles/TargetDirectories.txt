@@ -1,4 +1,7 @@
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/echo_server.dir
 /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/udp_echo_server.dir
+/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/udp_echo_client.dir
 /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcp_echo_client.dir
 /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/CMakeFiles/tcpecho_serv_select.dir

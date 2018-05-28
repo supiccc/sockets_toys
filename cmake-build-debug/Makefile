@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
+# Target rules for targets named udp_echo_server
+
+# Build rule for target.
+udp_echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_echo_server
+.PHONY : udp_echo_server
+
+# fast build rule for target.
+udp_echo_server/fast:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/build
+.PHONY : udp_echo_server/fast
+
+#=============================================================================
+# Target rules for targets named udp_echo_client
+
+# Build rule for target.
+udp_echo_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_echo_client
+.PHONY : udp_echo_client
+
+# fast build rule for target.
+udp_echo_client/fast:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/build
+.PHONY : udp_echo_client/fast
+
+#=============================================================================
 # Target rules for targets named tcp_echo_client
 
 # Build rule for target.
@@ -309,6 +348,33 @@ src/inect_fun/ntop_toy.cpp.s:
 	$(MAKE) -f CMakeFiles/ntop_toy.dir/build.make CMakeFiles/ntop_toy.dir/src/inect_fun/ntop_toy.cpp.s
 .PHONY : src/inect_fun/ntop_toy.cpp.s
 
+src/serv_echo/server.o: src/serv_echo/server.cpp.o
+
+.PHONY : src/serv_echo/server.o
+
+# target to build an object file
+src/serv_echo/server.cpp.o:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/src/serv_echo/server.cpp.o
+.PHONY : src/serv_echo/server.cpp.o
+
+src/serv_echo/server.i: src/serv_echo/server.cpp.i
+
+.PHONY : src/serv_echo/server.i
+
+# target to preprocess a source file
+src/serv_echo/server.cpp.i:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/src/serv_echo/server.cpp.i
+.PHONY : src/serv_echo/server.cpp.i
+
+src/serv_echo/server.s: src/serv_echo/server.cpp.s
+
+.PHONY : src/serv_echo/server.s
+
+# target to generate assembly for a file
+src/serv_echo/server.cpp.s:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/src/serv_echo/server.cpp.s
+.PHONY : src/serv_echo/server.cpp.s
+
 src/tcp_echo/client.o: src/tcp_echo/client.cpp.o
 
 .PHONY : src/tcp_echo/client.o
@@ -390,13 +456,70 @@ src/tcp_echo/server_select.cpp.s:
 	$(MAKE) -f CMakeFiles/tcpecho_serv_select.dir/build.make CMakeFiles/tcpecho_serv_select.dir/src/tcp_echo/server_select.cpp.s
 .PHONY : src/tcp_echo/server_select.cpp.s
 
+src/udp_echo/client.o: src/udp_echo/client.cpp.o
+
+.PHONY : src/udp_echo/client.o
+
+# target to build an object file
+src/udp_echo/client.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/src/udp_echo/client.cpp.o
+.PHONY : src/udp_echo/client.cpp.o
+
+src/udp_echo/client.i: src/udp_echo/client.cpp.i
+
+.PHONY : src/udp_echo/client.i
+
+# target to preprocess a source file
+src/udp_echo/client.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/src/udp_echo/client.cpp.i
+.PHONY : src/udp_echo/client.cpp.i
+
+src/udp_echo/client.s: src/udp_echo/client.cpp.s
+
+.PHONY : src/udp_echo/client.s
+
+# target to generate assembly for a file
+src/udp_echo/client.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_echo_client.dir/build.make CMakeFiles/udp_echo_client.dir/src/udp_echo/client.cpp.s
+.PHONY : src/udp_echo/client.cpp.s
+
+src/udp_echo/server.o: src/udp_echo/server.cpp.o
+
+.PHONY : src/udp_echo/server.o
+
+# target to build an object file
+src/udp_echo/server.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/src/udp_echo/server.cpp.o
+.PHONY : src/udp_echo/server.cpp.o
+
+src/udp_echo/server.i: src/udp_echo/server.cpp.i
+
+.PHONY : src/udp_echo/server.i
+
+# target to preprocess a source file
+src/udp_echo/server.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/src/udp_echo/server.cpp.i
+.PHONY : src/udp_echo/server.cpp.i
+
+src/udp_echo/server.s: src/udp_echo/server.cpp.s
+
+.PHONY : src/udp_echo/server.s
+
+# target to generate assembly for a file
+src/udp_echo/server.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_echo_server.dir/build.make CMakeFiles/udp_echo_server.dir/src/udp_echo/server.cpp.s
+.PHONY : src/udp_echo/server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... echo_server"
 	@echo "... rebuild_cache"
+	@echo "... udp_echo_server"
+	@echo "... udp_echo_client"
 	@echo "... tcp_echo_client"
 	@echo "... edit_cache"
 	@echo "... tcpecho_serv_select"
@@ -417,6 +540,9 @@ help:
 	@echo "... src/inect_fun/ntop_toy.o"
 	@echo "... src/inect_fun/ntop_toy.i"
 	@echo "... src/inect_fun/ntop_toy.s"
+	@echo "... src/serv_echo/server.o"
+	@echo "... src/serv_echo/server.i"
+	@echo "... src/serv_echo/server.s"
 	@echo "... src/tcp_echo/client.o"
 	@echo "... src/tcp_echo/client.i"
 	@echo "... src/tcp_echo/client.s"
@@ -426,6 +552,12 @@ help:
 	@echo "... src/tcp_echo/server_select.o"
 	@echo "... src/tcp_echo/server_select.i"
 	@echo "... src/tcp_echo/server_select.s"
+	@echo "... src/udp_echo/client.o"
+	@echo "... src/udp_echo/client.i"
+	@echo "... src/udp_echo/client.s"
+	@echo "... src/udp_echo/server.o"
+	@echo "... src/udp_echo/server.i"
+	@echo "... src/udp_echo/server.s"
 .PHONY : help
 
 

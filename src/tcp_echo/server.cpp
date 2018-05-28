@@ -31,7 +31,6 @@ void str_echo(int sockfd) {
         std::cout << "str_echo: read error";
 }
 
-
 void sig_chld(int signo) {
     // signal handler
     pid_t pid;

@@ -17,11 +17,149 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="echo_server">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/echo_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="echo_server/fast">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/echo_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 echo_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="udp_echo_server">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/udp_echo_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 udp_echo_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="udp_echo_server/fast">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/udp_echo_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 udp_echo_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="udp_echo_client">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/udp_echo_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 udp_echo_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="udp_echo_client/fast">
+				<Option output="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/udp_echo_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/suoiccc/development/C++/sockets_toy/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 udp_echo_client/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/suoiccc/development/C++/sockets_toy/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -372,6 +510,9 @@
 		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/inect_fun/ntop_toy.cpp">
 			<Option target="ntop_toy"/>
 		</Unit>
+		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/serv_echo/server.cpp">
+			<Option target="echo_server"/>
+		</Unit>
 		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/client.cpp">
 			<Option target="tcp_echo_client"/>
 		</Unit>
@@ -380,6 +521,12 @@
 		</Unit>
 		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/tcp_echo/server_select.cpp">
 			<Option target="tcpecho_serv_select"/>
+		</Unit>
+		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/udp_echo/client.cpp">
+			<Option target="udp_echo_client"/>
+		</Unit>
+		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/src/udp_echo/server.cpp">
+			<Option target="udp_echo_server"/>
 		</Unit>
 		<Unit filename="/Users/suoiccc/development/C++/sockets_toy/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
